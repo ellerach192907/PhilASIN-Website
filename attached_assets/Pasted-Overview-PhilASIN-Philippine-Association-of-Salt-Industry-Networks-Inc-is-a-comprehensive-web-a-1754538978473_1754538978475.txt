@@ -1,0 +1,64 @@
+Overview
+PhilASIN (Philippine Association of Salt Industry Networks, Inc.) is a comprehensive web application that serves as the digital hub for the Philippine salt industry. The platform facilitates collaboration among industry stakeholders, provides resources and news updates, and manages membership and contact information. Built as a modern full-stack application, it features a React-based frontend with Express.js backend, designed to unite and advance the salt industry through digital innovation.
+
+User Preferences
+Preferred communication style: Simple, everyday language.
+
+System Architecture
+Frontend Architecture
+Framework: React with TypeScript for type safety and modern development
+Routing: Wouter for lightweight client-side routing without the complexity of React Router
+UI Framework: Shadcn/ui components built on Radix UI primitives for accessibility and customization
+Styling: Tailwind CSS with custom design system including PhilASIN brand colors
+State Management: TanStack Query (React Query) for server state management and caching
+Form Handling: React Hook Form with Zod validation for type-safe form processing
+Build Tool: Vite for fast development and optimized production builds
+Backend Architecture
+Runtime: Node.js with Express.js framework for RESTful API endpoints
+Language: TypeScript for full-stack type safety
+API Design: REST architecture with structured endpoints for contacts, newsletter, news, and resources
+Error Handling: Centralized error handling middleware with proper HTTP status codes
+Logging: Custom request logging middleware for API monitoring
+Development: Hot module replacement via Vite integration for seamless development experience
+Data Storage Solutions
+ORM: Drizzle ORM for type-safe database operations and schema management
+Database: PostgreSQL configured for production use with Neon serverless database
+Migration System: Drizzle Kit for database schema migrations and version control
+Fallback Storage: In-memory storage implementation for development and testing scenarios
+Schema Validation: Zod schemas for runtime type checking and API validation
+Data Models
+Users: Authentication and user management system
+Contacts: Contact form submissions with structured fields
+Newsletter: Email subscription management system
+News: Content management for industry news and updates
+Resources: Document and resource sharing platform
+Design System
+Component Library: Comprehensive UI component system based on Radix UI
+Theme System: CSS custom properties for consistent color schemes and spacing
+Typography: Structured heading hierarchy and text styles
+Responsive Design: Mobile-first approach with Tailwind CSS breakpoints
+Brand Integration: Custom PhilASIN blue color scheme integrated throughout
+External Dependencies
+Database Infrastructure
+Neon Database: Serverless PostgreSQL database for production deployment
+Database Connection: @neondatabase/serverless for optimized serverless connections
+UI and Design
+Radix UI: Comprehensive set of accessible UI primitives for complex components
+Tailwind CSS: Utility-first CSS framework for rapid UI development
+Lucide React: Consistent icon library for user interface elements
+Class Variance Authority: Type-safe component variant management
+Embla Carousel: Carousel component for interactive content display
+Development Tools
+ESBuild: Fast JavaScript bundler for production builds
+TSX: TypeScript execution environment for development server
+PostCSS: CSS processing pipeline with Tailwind CSS integration
+Form and Validation
+React Hook Form: Performant form library with minimal re-renders
+Hookform Resolvers: Integration layer for external validation schemas
+Zod: TypeScript-first schema validation library
+Development Environment
+Replit Integration: Custom plugins for Replit development environment
+Runtime Error Overlay: Development error handling and debugging
+Cartographer: Code mapping and navigation tools for Replit
+The application follows a monorepo structure with shared TypeScript types and schemas, ensuring consistency between frontend and backend. The architecture prioritizes type safety, developer experience, and maintainable code organization while providing a robust platform for the Philippine salt industry community.
+

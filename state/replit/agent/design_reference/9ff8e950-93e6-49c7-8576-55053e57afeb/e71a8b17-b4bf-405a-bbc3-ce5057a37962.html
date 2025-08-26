@@ -1,0 +1,1195 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhilASIN - Philippine Association of Salt Industry Networks</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'philasin-blue': '#1E40AF',
+                        'philasin-light-blue': '#3B82F6',
+                        'philasin-amber': '#F59E0B',
+                        'philasin-gray': '#64748B',
+                        'philasin-dark': '#1E293B',
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- @COMPONENT: NavigationHeader -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo and Brand -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-philasin-blue rounded-lg flex items-center justify-center">
+                        <i class="fas fa-water text-white text-lg"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-philasin-dark">PhilASIN</h1>
+                        <p class="text-xs text-philasin-gray">Salt Industry Networks</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#about" class="text-philasin-gray hover:text-philasin-blue transition-colors duration-200 font-medium">About</a>
+                    <a href="#story" class="text-philasin-gray hover:text-philasin-blue transition-colors duration-200 font-medium">Our Story</a>
+                    <a href="#accomplishments" class="text-philasin-gray hover:text-philasin-blue transition-colors duration-200 font-medium">Accomplishments</a>
+                    <a href="#news" class="text-philasin-gray hover:text-philasin-blue transition-colors duration-200 font-medium">News</a>
+                    <a href="#resources" class="text-philasin-gray hover:text-philasin-blue transition-colors duration-200 font-medium">Resources</a>
+                    <a href="#membership" class="text-philasin-gray hover:text-philasin-blue transition-colors duration-200 font-medium">Membership</a>
+                    <a href="#contact" class="bg-philasin-blue text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-medium">Contact Us</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button" class="text-philasin-gray hover:text-philasin-blue">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="lg:hidden hidden bg-white border-t border-gray-200">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="#about" class="block px-3 py-2 text-philasin-gray hover:text-philasin-blue font-medium">About</a>
+                    <a href="#story" class="block px-3 py-2 text-philasin-gray hover:text-philasin-blue font-medium">Our Story</a>
+                    <a href="#accomplishments" class="block px-3 py-2 text-philasin-gray hover:text-philasin-blue font-medium">Accomplishments</a>
+                    <a href="#news" class="block px-3 py-2 text-philasin-gray hover:text-philasin-blue font-medium">News</a>
+                    <a href="#resources" class="block px-3 py-2 text-philasin-gray hover:text-philasin-blue font-medium">Resources</a>
+                    <a href="#membership" class="block px-3 py-2 text-philasin-gray hover:text-philasin-blue font-medium">Membership</a>
+                    <a href="#contact" class="block px-3 py-2 text-philasin-gray hover:text-philasin-blue font-medium">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: NavigationHeader -->
+
+    <!-- @COMPONENT: HeroSection -->
+    <section class="bg-gradient-to-br from-philasin-blue to-blue-700 text-white py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Advancing the Philippine 
+                        <span class="text-yellow-300">Salt Industry</span>
+                    </h1>
+                    <p class="text-xl lg:text-2xl mb-8 text-blue-100 leading-relaxed">
+                        PhilASIN unites stakeholders, promotes innovation, and drives sustainable growth across the salt industry network.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#membership" class="bg-philasin-amber text-philasin-dark px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-colors duration-200 text-center">
+                            Join Our Network
+                        </a>
+                        <a href="#about" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-philasin-blue transition-colors duration-200 text-center">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <!-- Salt harvesting landscape with workers in traditional salt fields -->
+                    <img src="https://pixabay.com/get/g4b1e5bf2ae16d469d05437888810b03d5966c27af6e0d592470fce5e419f3499b1f6235bcd41def471d4f0e6cfd7ad3590e14f65dd95c6b66863959c5549df7c_1280.jpg" 
+                         alt="Salt field workers harvesting salt" 
+                         class="rounded-2xl shadow-2xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: HeroSection -->
+
+    <!-- @COMPONENT: AboutSection -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-philasin-dark mb-4">About PhilASIN</h2>
+                <p class="text-xl text-philasin-gray max-w-3xl mx-auto">
+                    Philippine Association of Salt Industry Networks, Inc. serves as the digital hub for the Philippine salt industry, 
+                    facilitating collaboration and advancing the sector through innovation.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-philasin-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-philasin-dark mb-3">Industry Collaboration</h3>
+                    <p class="text-philasin-gray">
+                        Bringing together stakeholders across the salt industry to foster partnerships and knowledge sharing.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-philasin-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-lightbulb text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-philasin-dark mb-3">Innovation & Research</h3>
+                    <p class="text-philasin-gray">
+                        Promoting technological advancement and sustainable practices in salt production and processing.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-philasin-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-philasin-dark mb-3">Community Building</h3>
+                    <p class="text-philasin-gray">
+                        Creating a strong network of professionals dedicated to the growth of the Philippine salt industry.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <!-- Traditional salt farming with geometric salt ponds -->
+                    <img src="https://images.unsplash.com/photo-1566228015668-4c45dbc4e2f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                         alt="Geometric salt ponds in traditional farming setup" 
+                         class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-philasin-dark mb-6">Our Mission</h3>
+                    <p class="text-lg text-philasin-gray mb-6 leading-relaxed">
+                        To unite and advance the Philippine salt industry through digital innovation, sustainable practices, 
+                        and collaborative networks that benefit all stakeholders from producers to consumers.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-philasin-dark">Sustainable Development</h4>
+                                <p class="text-philasin-gray">Promoting environmentally responsible salt production methods.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-philasin-dark">Quality Standards</h4>
+                                <p class="text-philasin-gray">Establishing and maintaining high-quality standards across the industry.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-philasin-dark">Market Development</h4>
+                                <p class="text-philasin-gray">Expanding market opportunities for Philippine salt products.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: AboutSection -->
+
+    <!-- @COMPONENT: OurStorySection -->
+    <section id="story" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-philasin-dark mb-4">Our Story</h2>
+                <p class="text-xl text-philasin-gray max-w-3xl mx-auto">
+                    From humble beginnings to becoming the leading network for the Philippine salt industry.
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                    <!-- Timeline line -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-philasin-blue h-full hidden md:block"></div>
+
+                    <!-- Timeline items -->
+                    <div class="space-y-12">
+                        <!-- Timeline item 1 -->
+                        <div class="relative flex items-center md:justify-between">
+                            <div class="w-full md:w-5/12 md:text-right">
+                                <div class="bg-white p-6 rounded-xl shadow-lg">
+                                    <h3 class="text-xl font-bold text-philasin-dark mb-2">Foundation</h3>
+                                    <p class="text-philasin-amber font-semibold mb-2">2018</p>
+                                    <p class="text-philasin-gray">
+                                        PhilASIN was established to address the fragmented nature of the Philippine salt industry 
+                                        and create a unified platform for stakeholders.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-philasin-blue rounded-full border-4 border-white hidden md:block"></div>
+                            <div class="w-full md:w-5/12"></div>
+                        </div>
+
+                        <!-- Timeline item 2 -->
+                        <div class="relative flex items-center md:justify-between">
+                            <div class="w-full md:w-5/12"></div>
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-philasin-blue rounded-full border-4 border-white hidden md:block"></div>
+                            <div class="w-full md:w-5/12">
+                                <div class="bg-white p-6 rounded-xl shadow-lg">
+                                    <h3 class="text-xl font-bold text-philasin-dark mb-2">First Digital Platform</h3>
+                                    <p class="text-philasin-amber font-semibold mb-2">2020</p>
+                                    <p class="text-philasin-gray">
+                                        Launched our first digital platform to connect salt producers, researchers, 
+                                        and industry professionals across the Philippines.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline item 3 -->
+                        <div class="relative flex items-center md:justify-between">
+                            <div class="w-full md:w-5/12 md:text-right">
+                                <div class="bg-white p-6 rounded-xl shadow-lg">
+                                    <h3 class="text-xl font-bold text-philasin-dark mb-2">Industry Recognition</h3>
+                                    <p class="text-philasin-amber font-semibold mb-2">2022</p>
+                                    <p class="text-philasin-gray">
+                                        Received recognition from the Department of Agriculture as a key partner 
+                                        in advancing the Philippine salt industry.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-philasin-blue rounded-full border-4 border-white hidden md:block"></div>
+                            <div class="w-full md:w-5/12"></div>
+                        </div>
+
+                        <!-- Timeline item 4 -->
+                        <div class="relative flex items-center md:justify-between">
+                            <div class="w-full md:w-5/12"></div>
+                            <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-philasin-amber rounded-full border-4 border-white hidden md:block"></div>
+                            <div class="w-full md:w-5/12">
+                                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-philasin-amber">
+                                    <h3 class="text-xl font-bold text-philasin-dark mb-2">Present Day</h3>
+                                    <p class="text-philasin-amber font-semibold mb-2">2024</p>
+                                    <p class="text-philasin-gray">
+                                        Today, PhilASIN continues to lead digital transformation in the salt industry, 
+                                        connecting over 500+ industry professionals nationwide.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: OurStorySection -->
+
+    <!-- @COMPONENT: AccomplishmentsSection -->
+    <section id="accomplishments" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-philasin-dark mb-4">Our Accomplishments</h2>
+                <p class="text-xl text-philasin-gray max-w-3xl mx-auto">
+                    Celebrating milestones and achievements that have shaped the Philippine salt industry.
+                </p>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="grid md:grid-cols-4 gap-8 mb-16">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-philasin-blue mb-2" data-bind="stats.members">500+</div>
+                    <p class="text-philasin-gray font-medium">Active Members</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-philasin-blue mb-2" data-bind="stats.projects">25</div>
+                    <p class="text-philasin-gray font-medium">Completed Projects</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-philasin-blue mb-2" data-bind="stats.partnerships">15</div>
+                    <p class="text-philasin-gray font-medium">Industry Partnerships</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-philasin-blue mb-2" data-bind="stats.regions">12</div>
+                    <p class="text-philasin-gray font-medium">Regions Covered</p>
+                </div>
+            </div>
+
+            <!-- Accomplishments Grid -->
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- @MAP: accomplishments.map(item => ( -->
+                <div class="bg-slate-50 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-philasin-blue rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-trophy text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-philasin-dark mb-3" data-bind="item.title">Industry Innovation Award</h3>
+                    <p class="text-philasin-gray mb-4" data-bind="item.description">
+                        Recognized for implementing digital solutions that transformed traditional salt farming practices 
+                        and improved productivity across the industry.
+                    </p>
+                    <span class="text-philasin-amber font-semibold" data-bind="item.year">2023</span>
+                </div>
+
+                <div class="bg-slate-50 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-leaf text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-philasin-dark mb-3" data-bind="item.title">Sustainability Initiative</h3>
+                    <p class="text-philasin-gray mb-4" data-bind="item.description">
+                        Successfully launched eco-friendly salt production methods that reduced environmental impact 
+                        by 30% while maintaining quality standards.
+                    </p>
+                    <span class="text-philasin-amber font-semibold" data-bind="item.year">2023</span>
+                </div>
+
+                <div class="bg-slate-50 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-graduation-cap text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-philasin-dark mb-3" data-bind="item.title">Training Program Success</h3>
+                    <p class="text-philasin-gray mb-4" data-bind="item.description">
+                        Trained over 200 salt farmers in modern production techniques, improving their yield 
+                        and income by an average of 40%.
+                    </p>
+                    <span class="text-philasin-amber font-semibold" data-bind="item.year">2022</span>
+                </div>
+
+                <div class="bg-slate-50 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-heart text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-philasin-dark mb-3" data-bind="item.title">Community Impact</h3>
+                    <p class="text-philasin-gray mb-4" data-bind="item.description">
+                        Provided support to 50+ salt farming families affected by natural disasters, 
+                        helping them rebuild and continue their livelihoods.
+                    </p>
+                    <span class="text-philasin-amber font-semibold" data-bind="item.year">2022</span>
+                </div>
+
+                <div class="bg-slate-50 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-globe text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-philasin-dark mb-3" data-bind="item.title">International Recognition</h3>
+                    <p class="text-philasin-gray mb-4" data-bind="item.description">
+                        Featured in the Asia-Pacific Salt Industry Conference as a model for successful 
+                        industry digitalization and collaboration.
+                    </p>
+                    <span class="text-philasin-amber font-semibold" data-bind="item.year">2023</span>
+                </div>
+
+                <div class="bg-slate-50 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-philasin-dark mb-3" data-bind="item.title">Market Expansion</h3>
+                    <p class="text-philasin-gray mb-4" data-bind="item.description">
+                        Facilitated partnerships that opened new market channels, increasing Philippine salt 
+                        exports by 25% in the past two years.
+                    </p>
+                    <span class="text-philasin-amber font-semibold" data-bind="item.year">2021-2023</span>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: AccomplishmentsSection -->
+
+    <!-- @COMPONENT: NewsSection -->
+    <section id="news" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-philasin-dark mb-4">Latest News</h2>
+                <p class="text-xl text-philasin-gray max-w-3xl mx-auto">
+                    Stay updated with the latest developments, insights, and announcements from the Philippine salt industry.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 mb-12">
+                <!-- @MAP: news.map(article => ( -->
+                <!-- Featured News Article -->
+                <div class="lg:col-span-2 bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <!-- Modern salt processing facility with advanced equipment -->
+                    <img src="https://pixabay.com/get/g5846939b4bd6ac01093c91303451a3b11fc283c7e971ed30986e3f209d418425694ba18e6d7b288062dbbf39edb6a790e1adbf0eefed5cbd125c4d911686730c_1280.jpg" 
+                         alt="Modern salt processing facility" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="bg-philasin-blue text-white px-3 py-1 rounded-full text-sm font-semibold" data-bind="article.category">Industry Update</span>
+                            <span class="text-philasin-gray text-sm" data-bind="article.date">March 15, 2024</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-philasin-dark mb-4" data-bind="article.title">
+                            New Technology Transforms Philippine Salt Production
+                        </h3>
+                        <p class="text-philasin-gray mb-6 leading-relaxed" data-bind="article.excerpt">
+                            Revolutionary solar-powered desalination technology is being adopted by salt producers across the Philippines, 
+                            promising to increase yield while reducing environmental impact. The technology, developed in partnership with 
+                            local universities, could transform the industry.
+                        </p>
+                        <a href="#" class="inline-flex items-center text-philasin-blue hover:text-blue-700 font-semibold" data-event="click:readMore">
+                            Read Full Article <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- News Sidebar -->
+                <div class="space-y-6">
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center space-x-2 mb-3">
+                            <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold" data-bind="article.category">Success Story</span>
+                            <span class="text-philasin-gray text-sm" data-bind="article.date">March 12, 2024</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-philasin-dark mb-3" data-bind="article.title">
+                            Local Salt Farmer Wins National Award
+                        </h4>
+                        <p class="text-philasin-gray text-sm mb-4" data-bind="article.excerpt">
+                            Maria Santos from Pangasinan recognized for innovative sustainable farming practices...
+                        </p>
+                        <a href="#" class="text-philasin-blue hover:text-blue-700 font-semibold text-sm" data-event="click:readMore">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center space-x-2 mb-3">
+                            <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold" data-bind="article.category">Research</span>
+                            <span class="text-philasin-gray text-sm" data-bind="article.date">March 10, 2024</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-philasin-dark mb-3" data-bind="article.title">
+                            Study Reveals Health Benefits of Philippine Sea Salt
+                        </h4>
+                        <p class="text-philasin-gray text-sm mb-4" data-bind="article.excerpt">
+                            New research highlights unique mineral composition and health advantages...
+                        </p>
+                        <a href="#" class="text-philasin-blue hover:text-blue-700 font-semibold text-sm" data-event="click:readMore">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center space-x-2 mb-3">
+                            <span class="bg-philasin-amber text-white px-3 py-1 rounded-full text-sm font-semibold" data-bind="article.category">Event</span>
+                            <span class="text-philasin-gray text-sm" data-bind="article.date">March 8, 2024</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-philasin-dark mb-3" data-bind="article.title">
+                            Annual Salt Industry Conference 2024
+                        </h4>
+                        <p class="text-philasin-gray text-sm mb-4" data-bind="article.excerpt">
+                            Join us for the biggest gathering of salt industry professionals this year...
+                        </p>
+                        <a href="#" class="text-philasin-blue hover:text-blue-700 font-semibold text-sm" data-event="click:readMore">
+                            Read More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="bg-philasin-blue text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-semibold" data-event="click:viewAllNews">
+                    View All News
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: NewsSection -->
+
+    <!-- @COMPONENT: ResourcesSection -->
+    <section id="resources" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-philasin-dark mb-4">Resources</h2>
+                <p class="text-xl text-philasin-gray max-w-3xl mx-auto">
+                    Access valuable documents, research papers, guidelines, and tools to support your salt industry endeavors.
+                </p>
+            </div>
+
+            <!-- Resource Categories -->
+            <div class="grid lg:grid-cols-4 gap-8 mb-12">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-philasin-blue rounded-full flex items-center justify-center mx-auto mb-4 hover:bg-blue-700 transition-colors duration-200 cursor-pointer">
+                        <i class="fas fa-file-pdf text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-philasin-dark mb-2">Guidelines</h3>
+                    <p class="text-philasin-gray text-sm">Production standards and best practices</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4 hover:bg-green-600 transition-colors duration-200 cursor-pointer">
+                        <i class="fas fa-flask text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-philasin-dark mb-2">Research</h3>
+                    <p class="text-philasin-gray text-sm">Scientific studies and findings</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4 hover:bg-purple-600 transition-colors duration-200 cursor-pointer">
+                        <i class="fas fa-tools text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-philasin-dark mb-2">Tools</h3>
+                    <p class="text-philasin-gray text-sm">Calculators and utilities</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-philasin-amber rounded-full flex items-center justify-center mx-auto mb-4 hover:bg-yellow-500 transition-colors duration-200 cursor-pointer">
+                        <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-philasin-dark mb-2">Training</h3>
+                    <p class="text-philasin-gray text-sm">Educational materials and courses</p>
+                </div>
+            </div>
+
+            <!-- Resource Downloads -->
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- @MAP: resources.map(resource => ( -->
+                <div class="bg-slate-50 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-file-pdf text-white text-xl"></i>
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="text-lg font-bold text-philasin-dark mb-2" data-bind="resource.title">
+                                Salt Production Quality Standards 2024
+                            </h4>
+                            <p class="text-philasin-gray mb-4" data-bind="resource.description">
+                                Comprehensive guidelines for maintaining quality standards in salt production, 
+                                including testing procedures and certification requirements.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4 text-sm text-philasin-gray">
+                                    <span data-bind="resource.type">PDF</span>
+                                    <span data-bind="resource.size">2.4 MB</span>
+                                    <span data-bind="resource.downloads">1,234 downloads</span>
+                                </div>
+                                <button class="bg-philasin-blue text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200" data-event="click:downloadResource">
+                                    <i class="fas fa-download mr-2"></i>Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-leaf text-white text-xl"></i>
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="text-lg font-bold text-philasin-dark mb-2" data-bind="resource.title">
+                                Sustainable Salt Farming Practices
+                            </h4>
+                            <p class="text-philasin-gray mb-4" data-bind="resource.description">
+                                Environmental best practices for sustainable salt production, including water management 
+                                and ecosystem preservation techniques.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4 text-sm text-philasin-gray">
+                                    <span data-bind="resource.type">PDF</span>
+                                    <span data-bind="resource.size">1.8 MB</span>
+                                    <span data-bind="resource.downloads">987 downloads</span>
+                                </div>
+                                <button class="bg-philasin-blue text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200" data-event="click:downloadResource">
+                                    <i class="fas fa-download mr-2"></i>Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-calculator text-white text-xl"></i>
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="text-lg font-bold text-philasin-dark mb-2" data-bind="resource.title">
+                                Salt Yield Calculator Tool
+                            </h4>
+                            <p class="text-philasin-gray mb-4" data-bind="resource.description">
+                                Interactive calculator to estimate salt yield based on pond size, weather conditions, 
+                                and production methods. Available as Excel spreadsheet.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4 text-sm text-philasin-gray">
+                                    <span data-bind="resource.type">XLSX</span>
+                                    <span data-bind="resource.size">456 KB</span>
+                                    <span data-bind="resource.downloads">2,156 downloads</span>
+                                </div>
+                                <button class="bg-philasin-blue text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200" data-event="click:downloadResource">
+                                    <i class="fas fa-download mr-2"></i>Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-philasin-amber rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-play text-white text-xl"></i>
+                        </div>
+                        <div class="flex-grow">
+                            <h4 class="text-lg font-bold text-philasin-dark mb-2" data-bind="resource.title">
+                                Training Video Series
+                            </h4>
+                            <p class="text-philasin-gray mb-4" data-bind="resource.description">
+                                Complete video training series covering modern salt production techniques, 
+                                quality control, and business management for salt farmers.
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4 text-sm text-philasin-gray">
+                                    <span data-bind="resource.type">Video</span>
+                                    <span data-bind="resource.duration">2.5 hours</span>
+                                    <span data-bind="resource.views">5,432 views</span>
+                                </div>
+                                <button class="bg-philasin-blue text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200" data-event="click:watchVideo">
+                                    <i class="fas fa-play mr-2"></i>Watch
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#" class="bg-philasin-blue text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-semibold" data-event="click:viewAllResources">
+                    View All Resources
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: ResourcesSection -->
+
+    <!-- @COMPONENT: MembershipSection -->
+    <section id="membership" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-philasin-dark mb-4">Membership</h2>
+                <p class="text-xl text-philasin-gray max-w-3xl mx-auto">
+                    Join our growing community of salt industry professionals and unlock exclusive benefits, 
+                    resources, and networking opportunities.
+                </p>
+            </div>
+
+            <!-- Membership Benefits -->
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-philasin-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-philasin-dark mb-3">Networking</h3>
+                    <p class="text-philasin-gray">
+                        Connect with industry professionals, researchers, and experts across the Philippines and beyond.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-book text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-philasin-dark mb-3">Exclusive Resources</h3>
+                    <p class="text-philasin-gray">
+                        Access premium research, market insights, and technical documentation not available to the public.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-calendar text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-philasin-dark mb-3">Events & Training</h3>
+                    <p class="text-philasin-gray">
+                        Participate in exclusive workshops, conferences, and training programs designed for members.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Membership Plans -->
+            <div class="grid lg:grid-cols-3 gap-8 mb-12">
+                <!-- @MAP: membershipPlans.map(plan => ( -->
+                <!-- Basic Plan -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-philasin-dark mb-2" data-bind="plan.name">Basic</h3>
+                        <div class="text-4xl font-bold text-philasin-blue mb-2" data-bind="plan.price">Free</div>
+                        <p class="text-philasin-gray" data-bind="plan.description">Perfect for getting started</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span class="text-philasin-gray" data-bind="feature">Access to public resources</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span class="text-philasin-gray" data-bind="feature">Monthly newsletter</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span class="text-philasin-gray" data-bind="feature">Community forum access</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span class="text-philasin-gray" data-bind="feature">Basic industry updates</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-philasin-blue text-white py-3 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-semibold" data-event="click:selectPlan">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border-2 border-philasin-blue relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-philasin-blue text-white px-4 py-1 rounded-full text-sm font-semibold">Most Popular</span>
+                    </div>
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-philasin-dark mb-2" data-bind="plan.name">Professional</h3>
+                        <div class="text-4xl font-bold text-philasin-blue mb-2" data-bind="plan.price">₱2,500<span class="text-lg text-philasin-gray">/year</span></div>
+                        <p class="text-philasin-gray" data-bind="plan.description">For industry professionals</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span class="text-philasin-gray" data-bind="feature">All Basic features</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span class="text-philasin-gray" data-bind="feature">Premium research reports</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span class="text-philasin-gray" data-bind="feature">Webinar access</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span class="text-philasin-gray" data-bind="feature">Direct expert consultation</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span class="text-philasin-gray" data-bind="feature">Priority support</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-philasin-blue text-white py-3 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-semibold" data-event="click:selectPlan">
+                        Choose Professional
+                    </button>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-philasin-dark mb-2" data-bind="plan.name">Enterprise</h3>
+                        <div class="text-4xl font-bold text-philasin-blue mb-2" data-bind="plan.price">₱10,000<span class="text-lg text-philasin-gray">/year</span></div>
+                        <p class="text-philasin-gray" data-bind="plan.description">For organizations & companies</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span class="text-philasin-gray" data-bind="feature">All Professional features</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span class="text-philasin-gray" data-bind="feature">Custom research projects</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span class="text-philasin-gray" data-bind="feature">Private training sessions</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span class="text-philasin-gray" data-bind="feature">Partnership opportunities</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span class="text-philasin-gray" data-bind="feature">Dedicated account manager</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-philasin-blue text-white py-3 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-semibold" data-event="click:selectPlan">
+                        Contact Sales
+                    </button>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+
+            <!-- Application Process -->
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h3 class="text-2xl font-bold text-philasin-dark mb-6 text-center">How to Apply</h3>
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-philasin-blue rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">1</div>
+                        <h4 class="font-semibold text-philasin-dark mb-2">Choose Plan</h4>
+                        <p class="text-philasin-gray text-sm">Select the membership plan that suits your needs</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-philasin-blue rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">2</div>
+                        <h4 class="font-semibold text-philasin-dark mb-2">Submit Form</h4>
+                        <p class="text-philasin-gray text-sm">Complete the membership application form</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-philasin-blue rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">3</div>
+                        <h4 class="font-semibold text-philasin-dark mb-2">Review</h4>
+                        <p class="text-philasin-gray text-sm">Our team reviews your application within 48 hours</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">4</div>
+                        <h4 class="font-semibold text-philasin-dark mb-2">Welcome</h4>
+                        <p class="text-philasin-gray text-sm">Get access to your member dashboard and benefits</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: MembershipSection -->
+
+    <!-- @COMPONENT: ContactSection -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-philasin-dark mb-4">Contact Us</h2>
+                <p class="text-xl text-philasin-gray max-w-3xl mx-auto">
+                    Get in touch with us for inquiries, partnerships, or support. We're here to help advance the Philippine salt industry together.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-2xl font-bold text-philasin-dark mb-8">Get in Touch</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-philasin-blue rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-philasin-dark mb-1">Address</h4>
+                                <p class="text-philasin-gray" data-bind="contact.address">
+                                    123 Salt Industry Drive<br>
+                                    Quezon City, Metro Manila 1100<br>
+                                    Philippines
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-philasin-blue rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-philasin-dark mb-1">Phone</h4>
+                                <p class="text-philasin-gray" data-bind="contact.phone">+63 2 8123 4567</p>
+                                <p class="text-philasin-gray" data-bind="contact.mobile">+63 917 123 4567</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-philasin-blue rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-philasin-dark mb-1">Email</h4>
+                                <p class="text-philasin-gray" data-bind="contact.email">info@philasin.org</p>
+                                <p class="text-philasin-gray" data-bind="contact.support">support@philasin.org</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-philasin-blue rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clock text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-philasin-dark mb-1">Office Hours</h4>
+                                <p class="text-philasin-gray" data-bind="contact.hours">
+                                    Monday - Friday: 8:00 AM - 5:00 PM<br>
+                                    Saturday: 9:00 AM - 12:00 PM<br>
+                                    Sunday: Closed
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="mt-8">
+                        <h4 class="font-semibold text-philasin-dark mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white hover:bg-blue-700 transition-colors duration-200" data-implementation="Link to Facebook page">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-blue-400 rounded-lg flex items-center justify-center text-white hover:bg-blue-500 transition-colors duration-200" data-implementation="Link to Twitter profile">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-blue-700 rounded-lg flex items-center justify-center text-white hover:bg-blue-800 transition-colors duration-200" data-implementation="Link to LinkedIn page">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center text-white hover:bg-red-700 transition-colors duration-200" data-implementation="Link to YouTube channel">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-slate-50 rounded-xl p-8">
+                    <h3 class="text-2xl font-bold text-philasin-dark mb-6">Send us a Message</h3>
+                    <form class="space-y-6" data-implementation="Form should submit to /api/contact endpoint">
+                        <!-- @STATE: formData:object, isSubmitting:boolean = false -->
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="first-name" class="block text-sm font-semibold text-philasin-dark mb-2">First Name *</label>
+                                <input 
+                                    type="text" 
+                                    id="first-name" 
+                                    name="firstName"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-philasin-blue focus:border-transparent transition-colors duration-200" 
+                                    required
+                                    data-bind="formData.firstName"
+                                >
+                            </div>
+                            <div>
+                                <label for="last-name" class="block text-sm font-semibold text-philasin-dark mb-2">Last Name *</label>
+                                <input 
+                                    type="text" 
+                                    id="last-name" 
+                                    name="lastName"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-philasin-blue focus:border-transparent transition-colors duration-200" 
+                                    required
+                                    data-bind="formData.lastName"
+                                >
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-philasin-dark mb-2">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-philasin-blue focus:border-transparent transition-colors duration-200" 
+                                required
+                                data-bind="formData.email"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="organization" class="block text-sm font-semibold text-philasin-dark mb-2">Organization</label>
+                            <input 
+                                type="text" 
+                                id="organization" 
+                                name="organization"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-philasin-blue focus:border-transparent transition-colors duration-200"
+                                data-bind="formData.organization"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="subject" class="block text-sm font-semibold text-philasin-dark mb-2">Subject *</label>
+                            <select 
+                                id="subject" 
+                                name="subject"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-philasin-blue focus:border-transparent transition-colors duration-200" 
+                                required
+                                data-bind="formData.subject"
+                            >
+                                <option value="">Select a subject</option>
+                                <option value="membership">Membership Inquiry</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="research">Research Collaboration</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-semibold text-philasin-dark mb-2">Message *</label>
+                            <textarea 
+                                id="message" 
+                                name="message"
+                                rows="5"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-philasin-blue focus:border-transparent transition-colors duration-200 resize-vertical" 
+                                placeholder="Please describe your inquiry in detail..."
+                                required
+                                data-bind="formData.message"
+                            ></textarea>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <input 
+                                type="checkbox" 
+                                id="privacy" 
+                                name="privacy"
+                                class="mt-1 w-4 h-4 text-philasin-blue border-gray-300 rounded focus:ring-philasin-blue" 
+                                required
+                                data-bind="formData.privacyAccepted"
+                            >
+                            <label for="privacy" class="text-sm text-philasin-gray">
+                                I agree to the <a href="#" class="text-philasin-blue hover:underline">Privacy Policy</a> and 
+                                <a href="#" class="text-philasin-blue hover:underline">Terms of Service</a> *
+                            </label>
+                        </div>
+
+                        <button 
+                            type="submit" 
+                            class="w-full bg-philasin-blue text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-semibold"
+                            data-event="click:handleSubmit"
+                            data-implementation="Should validate form before submission"
+                        >
+                            <span class="inline-flex items-center">
+                                <i class="fas fa-paper-plane mr-2"></i>
+                                Send Message
+                            </span>
+                        </button>
+                        <!-- TODO: Add loading state and success/error messages -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: ContactSection -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="bg-philasin-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-philasin-blue rounded-lg flex items-center justify-center">
+                            <i class="fas fa-water text-white text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">PhilASIN</h3>
+                            <p class="text-sm text-gray-300">Salt Industry Networks</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed max-w-md">
+                        Philippine Association of Salt Industry Networks, Inc. is dedicated to advancing the salt industry 
+                        through innovation, collaboration, and sustainable practices.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center text-gray-300 hover:bg-philasin-blue hover:text-white transition-colors duration-200">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center text-gray-300 hover:bg-philasin-blue hover:text-white transition-colors duration-200">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center text-gray-300 hover:bg-philasin-blue hover:text-white transition-colors duration-200">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center text-gray-300 hover:bg-philasin-blue hover:text-white transition-colors duration-200">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition-colors duration-200">About</a></li>
+                        <li><a href="#story" class="text-gray-300 hover:text-white transition-colors duration-200">Our Story</a></li>
+                        <li><a href="#accomplishments" class="text-gray-300 hover:text-white transition-colors duration-200">Accomplishments</a></li>
+                        <li><a href="#news" class="text-gray-300 hover:text-white transition-colors duration-200">News</a></li>
+                        <li><a href="#resources" class="text-gray-300 hover:text-white transition-colors duration-200">Resources</a></li>
+                        <li><a href="#membership" class="text-gray-300 hover:text-white transition-colors duration-200">Membership</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-philasin-blue mt-1"></i>
+                            <div class="text-gray-300 text-sm">
+                                123 Salt Industry Drive<br>
+                                Quezon City, Metro Manila 1100
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-philasin-blue"></i>
+                            <span class="text-gray-300 text-sm">+63 2 8123 4567</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-philasin-blue"></i>
+                            <span class="text-gray-300 text-sm">info@philasin.org</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-700 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-gray-400 text-sm">
+                        &copy; 2024 PhilASIN. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6 text-sm">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // Mobile menu functionality
+        (() => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        })();
+
+        // Smooth scrolling for navigation links
+        (() => {
+            const navLinks = document.querySelectorAll('a[href^="#"]');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        const offsetTop = targetSection.offsetTop - 80; // Account for fixed header
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        const mobileMenu = document.getElementById('mobile-menu');
+                        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+        })();
+
+        // TODO: Implement business logic for:
+        // - Form submissions and validation
+        // - Member authentication and dashboard
+        // - Resource download tracking
+        // - Newsletter subscription management
+        // - Dynamic content loading for news and resources
+        // - Search functionality
+        // - User preferences and settings
+        // - API integration for data persistence
+    </script>
+</body>
+</html>
